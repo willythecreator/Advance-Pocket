@@ -1,0 +1,9 @@
+build/
+*.exe
+*.out
+*.o
+*.gba
+*.gb
+roms/
+.DS_Store
+Thumbs.db
