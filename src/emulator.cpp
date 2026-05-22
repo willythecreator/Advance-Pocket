@@ -87,10 +87,7 @@ void Emulator::teardown()
 
 void Emulator::render_ppu()
 {
-    for (int i = 0; i < GBA_PIXELS; i++)
-    {
-        fb_[i] = 0xFF1A2A1A;
-    }
+    ppu_.render_frame(mem_, fb_);
 }
 
 void Emulator::close_menu()

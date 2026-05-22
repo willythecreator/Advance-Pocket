@@ -2,6 +2,7 @@
 #include "types.h"
 #include "gba/cpu.h"
 #include "gba/memory.h"
+#include "gba/ppu.h"
 #include <string>
 #include <cstdint>
 
@@ -30,6 +31,7 @@ private:
     EmuState state_ = EmuState::IDLE;
     CPU cpu_;
     Memory mem_;
+    PPU ppu_;
     uint32_t fb_[GBA_PIXELS] = {};
 
     std::string rom_path_;

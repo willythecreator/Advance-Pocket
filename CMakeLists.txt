@@ -16,6 +16,7 @@ set(SOURCES
     src/emulator.cpp
     src/gba/cpu.cpp
     src/gba/memory.cpp
+    src/gba/ppu.cpp
 )
 
 add_executable(AdvancePocket ${SOURCES})
